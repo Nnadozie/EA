@@ -23,8 +23,10 @@ var pool = [
 //create fitness function
 //length is same as my full name
 //sum of first two, then 
+var omni = "The cat AtE the WILd Weste"
 function checkFitness(gene) {
-    var fittest = "Nnadozie Ekenechukwu Okeke"
+    //var fittest = "Nnadozie Ekenechukwu Okeke"
+    var fittest = omni
     var sum = 0
 
     for(let i = 0; i < gene.length; i++) {
@@ -173,7 +175,7 @@ while(stop == 0) {
        writeTf(j+": " + i)
     }
 
-    if (fittest[0] == "Nnadozie Ekenechukwu Okeke") {
+    if (fittest[0] == omni) {
         //writeTf(j+": " + fittest[0])
         console.log("FIT!")        
         stop = 1
